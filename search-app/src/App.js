@@ -1,5 +1,6 @@
 import React from 'react';
 import MapContainer from './components/MapContainer';
+import ReactGoogleMap from './components/ReactGoogleMap';
 import Search from './components/Search';
 import SearchGrid from './components/SearchGrid';
 import { Provider } from "react-redux";
@@ -14,7 +15,7 @@ function App() {
   return (
       <div className="App">
         <Provider store={userStore}>
-          <MapContainer />
+          <ReactGoogleMap />
           <Search />
           <SearchGrid />
         </Provider>
