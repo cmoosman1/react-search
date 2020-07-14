@@ -1,4 +1,5 @@
 import React from 'react';
+import MapContainer from './components/MapContainer';
 import Search from './components/Search';
 import SearchGrid from './components/SearchGrid';
 import { Provider } from "react-redux";
@@ -9,9 +10,11 @@ import './App.css';
 const userStore = createStore(reducer);
 
 function App() {
+  
   return (
       <div className="App">
         <Provider store={userStore}>
+          <MapContainer />
           <Search />
           <SearchGrid />
         </Provider>
